@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vivek Mayinkar | Freelance Mainframe Consultant & Trainer</title>
+    <!-- Google Fonts for Modern Typography -->
+    <link href="https://googleapis.com" rel="stylesheet">
+    
+    <style>
+        /* Base Styling & Variables */
+        :root {
+            --bg-primary: #f8fafc;
+            --bg-card: #ffffff;
+            --text-main: #1e293b;
+            --text-muted: #64748b;
+            --accent-color: #0284c7;
+            --accent-hover: #0369a1;
+            --border-color: #e2e8f0;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--bg-primary);
+            color: var(--text-main);
+            line-height: 1.6;
+            padding: 2rem 1rem;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        /* Hero / Header Section */
+        header {
+            background-color: var(--bg-card);
+            padding: 2.5rem;
+            border-radius: 12px;
+            border: 1px solid var(--border-color);
+            margin-bottom: 2rem;
+            text-align: center;
+            box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.05);
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: var(--accent-color);
+            margin-bottom: 0.5rem;
+        }
+
+        header h2 {
+            font-size: 1.25rem;
+            font-weight: 500;
+            color: var(--text-muted);
+            margin-bottom: 1.5rem;
+        }
+
+        .contact-info {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 1.5rem;
+            margin-bottom: 1.5rem;
+            font-size: 0.95rem;
+        }
+
+        .contact-info a {
+            color: var(--text-main);
+            text-decoration: none;
+            transition: color 0.2s;
+        }
+
+        .contact-info a:hover {
+            color: var(--accent-color);
+        }
+
+        .cta-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 0.75rem 1.5rem;
+            border-radius: 6px;
+            font-weight: 500;
+            text-decoration: none;
+            transition: background-color 0.2s, transform 0.1s;
+        }
+
+        .btn-primary {
+            background-color: var(--accent-color);
+            color: white;
+        }
+
+        .btn-primary:hover {
+            background-color: var(--accent-hover);
+        }
+
+        .btn-secondary {
+            background-color: #ef4444;
+            color: white;
+        }
+
+        .btn-secondary:hover {
+            background-color: #dc2626;
+        }
+
+        /* Section Layouts */
+        section {
+            background-color: var(--bg-card);
+            padding: 2.5rem;
+            border-radius: 12px;
+            border: 1px solid var(--border-color);
+            margin-bottom: 2rem;
+            box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.05);
+        }
+
+        h3 {
+            font-size: 1.5rem;
+            font-weight: 600;
+            margin-bottom: 1.25rem;
+            position: relative;
+            padding-bottom: 0.5rem;
+        }
+
+        h3::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 50px;
+            height: 3px;
+            background-color: var(--accent-color);
+            border-radius: 2px;
+        }
+
+        /* Forte Grid Layer */
+        .forte-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 1.5rem;
+            margin-top: 1rem;
+        }
+
+        .forte-card {
+            background-color: var(--bg-primary);
+            padding: 1.5rem;
+            border-radius: 8px;
+            border: 1px solid var(--border-color);
+        }
+
+        .forte-card h4 {
+            color: var(--accent-color);
+            margin-bottom: 0.75rem;
+            font-weight: 600;
+        }
+
+        /* Core Skills Layout */
+        .skills-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.75rem;
+            list-style: none;
+        }
+
+        .skills-grid li {
+            background-color: #f1f5f9;
+            color: var(--text-main);
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            font-weight: 500;
+            border: 1px solid var(--border-color);
+        }
+
+        /* Lists styling */
+        ul.custom-list {
+            list-style-type: square;
+            padding-left: 1.25rem;
+        }
+
+        ul.custom-list li {
+            margin-bottom: 0.5rem;
+        }
+
+        /* Responsive Breakpoints */
+        @media (max-width: 768px) {
+            body { padding: 1rem 0.5rem; }
+            header, section { padding: 1.5rem; }
+            .contact-info { flex-direction: column; gap: 0.5rem; }
+            .cta-buttons { flex-direction: column; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+
+        <!-- HEADER SECTION -->
+        <header>
+            <h1>Vivek Mayinkar</h1>
+            <h2>Freelance Mainframe Consultant & Corporate Trainer</h2>
+            
+            <div class="contact-info">
+                <span>📍 Bangalore, India</span>
+                <span>📞 <a href="tel:+918317396751">+91 8317396751</a></span>
+                <span>✉️ <a href="mailto:vivekmayinkar@gmail.com">vivekmayinkar@gmail.com</a></span>
+            </div>
+
+            <div class="cta-buttons">
+                <!-- Replace '#' with your actual uploaded CV link path later -->
+                <a href="#" class="btn btn-primary" target="_blank">📄 View / Download CV</a>
+                <a href="https://youtube.com" class="btn btn-secondary" target="_blank">▶️ YouTube Channel</a>
+            </div>
+        </header>
+
+        <!-- ABOUT / SIGNATURE APPROACH -->
+        <section>
+            <h3>Professional Overview</h3>
+            <p>A seasoned IT professional with <strong>22+ years of experience</strong> cross-cutting regular roles and independent freelancing execution since 2013. Specializing in Mainframe architectures, complex code migrations, gap/impact analysis, and tailor-made enterprise capability enablement. Proven track record serving across top-tier domains including Credit Cards (Finance), Insurance, Retail, and Healthcare [1].</p>
+        </section>
+
+        <!-- FORTE CARDS SECTION -->
+        <section>
+            <h3>Core Forte Dimensions</h3>
+            <div class="forte-grid">
+                
+                <div class="forte-card">
+                    <h4>Consulting & Architecture</h4>
+                    <p>Providing custom migrations context (such as COBOL to Java transformations), impact mitigation matrices, gap assessment strategies, and system-level tools implementation optimization [1].</p>
+                </div>
+
+                <div class="forte-card">
+                    <h4>Corporate Training Forte</h4>
+                    <p>Delivering high-touch, customized up-skilling & cross-skilling courses ranging from 5 to 55 structural working days depending completely upon explicit client constraints [1].</p>
+                </div>
+
+                <div class="forte-card">
+                    <h4>Domain Architecture Context</h4>
+                    <p>Deep operational specialization inside global verticals including Credit Card platforms (VisionPlus environments), Retail IT spaces, and structural Health Insurance systems [1].</p>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- CORE SKILLS GRID -->
+        <section>
+            <h3>Core Conducted Courses & Competencies</h3>
+            <ul class="skills-grid">
+                <li>VisionPlus (Cards Software)</li>
+                <li>COBOL Application Programming</li>
+                <li>JCL &amp; MVS / z/OS Utilities</li>
+                <li>DB2 (SQL &amp; Application Logic)</li>
+                <li>CICS Core Programming</li>
+                <li>VSAM Architectures</li>
+                <li>Assembler Programming (HLASM)</li>
+                <li>Xpeditor &amp; Abend-Aid Debugging</li>
+                <li>FileAid / FileManager</li>
+                <li>CA7 / CA11 Schedulers</li>
+                <li>Endevor / Changeman SCM</li>
+                <li>REXX &amp; CLIST Scripting</li>
+                <li>Easytrieves &amp; PL/I</li>
+                <li>Software Engineering &amp; SDLC</li>
+            </ul>
+        </section>
+
+        <!-- CORPORATE CLIENT FOOTPRINT -->
+        <section>
+            <h3>Corporate Footprint & Delivery Experience</h3>
+            <p style="margin-bottom: 1rem;">Successfully executed critical technology initiatives and advanced knowledge transfer blueprints for prominent global organizations including [1]:</p>
+            <ul class="custom-list">
+                <li>Capgemini, Accenture, Kanbay, and Infosys [1]</li>
+                <li>GE Capital, ANZIT, and Computer Sciences Corporation (CSC/DXC) [1]</li>
+                <li>Hexaware, Mphasis, Aricent, Rsystems, and SLK Software [1]</li>
+            </ul>
+        </section>
+
+    </div>
+
+</body>
+</html>
